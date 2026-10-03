@@ -1,0 +1,9644 @@
+{
+  "format": "acx720-realtime640-candidate-v1",
+  "validated": false,
+  "input_size": 640,
+  "input_bytes": 1228800,
+  "required_weight_bytes": 2318592,
+  "completion_rule": "poll ap_done after every operation",
+  "layers": [
+    {
+      "index": 0,
+      "name": "img_conv1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 0
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4194304
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4196032
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 8388608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 320
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 320
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 12
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 16
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 132
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1449169990
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 40
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "img_conv2",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 8388608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4196160
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4200768
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 10027008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 320
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 320
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 16
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 132
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 129
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1456115454
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "img_conv3",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 10027008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4201024
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4201536
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 10846208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 160
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 160
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 16
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 129
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 171
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1300491203
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 36
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "img_conv4",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 10027008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4201664
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4202176
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 11255808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 160
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 160
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 16
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 129
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 204
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1952684132
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 37
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "img_conv5",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 10846208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4202304
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4202560
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 11665408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 160
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 160
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 16
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 16
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 171
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 177
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1580123342
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 36
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "img_conv6",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 11665408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4202688
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4204992
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 12075008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 160
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 160
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 16
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 16
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 177
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 140
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 2090441688
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "add0_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 12075008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 10846208
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 12484608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 409600
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 655536438
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 171
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 0
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 140
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 507054439
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "cat0_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 12484608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 12894208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 409600
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 266570523
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "cat0_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 11255808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 13303808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 409600
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 204
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1387343746
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "img_conv7",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 12894208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4205120
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4206144
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 13713408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 160
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 160
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 141
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1267724028
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "img_conv8",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 13713408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4206400
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4224832
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 14532608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 160
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 160
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 141
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 149
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1377624194
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "img_conv9",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 14532608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4225344
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4227392
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 14942208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 149
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 146
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1771469745
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "img_conv10",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 14532608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4227648
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4229696
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 15147008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 149
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 130
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1387315884
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 37
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "img_conv11",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 14942208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4229952
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4230976
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 15351808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 146
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 125
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1525813182
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 37
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "img_conv12",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 15351808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4231232
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4240448
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 15556608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 125
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 148
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1781394098
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "add1_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 15556608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 14942208
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 15761408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 204800
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 379225639
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 146
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 0
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 148
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 501693294
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "img_conv13",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 15761408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4240704
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4241728
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 15966208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 133
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1889019831
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "img_conv14",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 15966208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4241984
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4251200
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 16171008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 133
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 133
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 2047617722
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "add2_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 16171008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 15761408
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 16375808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 204800
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 139532449
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 0
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 133
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 453762675
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "cat1_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 16375808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 16580608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 204800
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 279127314
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "name": "cat1_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 15147008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 16785408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 204800
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 130
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 399211282
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "name": "img_conv15",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 16580608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4251456
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4255552
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 16990208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 134
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1167112260
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "name": "img_conv16",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 16990208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4256064
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4329792
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 17399808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 134
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 151
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1231964949
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "name": "img_conv17",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 17399808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4330816
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4339008
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 17604608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 151
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 173
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1306245320
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "name": "img_conv18",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 17399808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4339520
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4347712
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 17707008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 151
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 144
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1237535231
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "name": "img_conv19",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 17604608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4348224
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4352320
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 17809408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 173
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 147
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1974959991
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "name": "img_conv20",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 17809408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4352832
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4389696
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 17911808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 147
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 145
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1292935605
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "name": "add3_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 17911808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 17604608
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5988608
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18014208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 535142211
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 173
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 145
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 561795629
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "name": "img_conv21",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18014208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4390208
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4394304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18116608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 146
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 2032107362
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "name": "img_conv22",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18116608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4394816
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4431680
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18219008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 146
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 147
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1407279784
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "name": "add4_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18219008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 18014208
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18321408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 172924981
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 0
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 147
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 530606119
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "name": "img_conv23",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18321408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4432192
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4436288
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18423808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 131
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1478112874
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "name": "img_conv24",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18423808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4436800
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4473664
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18526208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 131
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 134
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1310127833
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "name": "add5_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18526208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 18321408
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18628608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 164931755
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 0
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 134
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 430801819
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "name": "cat2_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18628608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18731008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 285644498
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "name": "cat2_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 17707008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18833408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 144
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 448034558
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "name": "img_conv25",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18731008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4474176
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4490560
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 18935808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 148
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 2116849982
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 40
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "name": "img_conv26",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18935808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4491584
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4786496
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19140608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 256
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 148
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 140
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1716196459
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 40
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "name": "img_conv27",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19140608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4788544
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4821312
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19243008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 140
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 150
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1186207451
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "name": "img_conv28",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19140608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4822336
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4855104
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19294208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 140
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 145
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1154195082
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "name": "img_conv29",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19243008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4856128
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4872512
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19345408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 150
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 145
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1847839761
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "name": "img_conv30",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19345408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4873536
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5020992
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19396608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 145
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 145
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1820220485
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 40
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "name": "add6_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19396608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 19243008
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19447808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 295943173
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 150
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 0
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 145
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 672191209
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "name": "cat3_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19447808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19499008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 281753667
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "name": "cat3_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19294208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19550208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 145
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 600375767
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "name": "img_conv31",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19499008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5022016
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5087552
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19601408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 256
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 150
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1051626969
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 40
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "name": "img_conv32",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19601408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5089600
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5122368
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19703808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 150
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 141
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1085492635
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "name": "max1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19703808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4194304
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19755008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 5
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 2
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 0
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 0
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "name": "max2",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19755008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4194304
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19806208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 5
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 2
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 0
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 0
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "name": "max3",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19806208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4194304
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19857408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 5
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 2
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 0
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 0
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "name": "cat4_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19703808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19908608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 141
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 626778441
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "name": "cat4_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19755008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 19959808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 141
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 626778441
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "name": "cat4_part2",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19806208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20011008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 141
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 626778441
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "name": "cat4_part3",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19857408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20062208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 141
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 626778441
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "name": "img_conv33",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 19908608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5123392
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5254464
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20113408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 512
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 256
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 170
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 765096641
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 40
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "name": "img_conv34",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 20113408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5256512
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5289280
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20215808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 170
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 154
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1942447098
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "name": "upsample_0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 20215808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4194304
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20267008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 4
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 0
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 0
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "name": "cat5_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 20267008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20471808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 204800
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 154
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 520398184
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "name": "cat5_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 18935808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20676608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 204800
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 148
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 673068878
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "name": "img_conv35",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 20471808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5290304
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5306688
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20881408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 190
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1327012145
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 40
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "name": "img_conv36",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 20471808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5307200
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5323584
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 20983808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 143
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1408919148
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "name": "img_conv37",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 20881408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5324096
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5328192
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 21086208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 190
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 133
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1282224831
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 37
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "name": "img_conv38",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 21086208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5328704
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5365568
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 21188608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 133
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 130
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1207550599
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "name": "cat6_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 21188608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 21291008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 130
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 639706904
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "name": "cat6_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 20983808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 21393408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 143
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 480629739
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "name": "img_conv39",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 21291008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5366080
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5382464
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 21495808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 138
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1237158491
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "name": "img_conv40",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 21495808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5383488
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5391680
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 21700608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 138
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 103
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1339762618
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 37
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "name": "upsample_1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 21700608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 4194304
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 21803008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 4
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 0
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 0
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "name": "cat7_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 21803008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 22212608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 409600
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 103
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 367359780
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "name": "cat7_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 16990208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 22622208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 409600
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 134
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 597215408
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "name": "img_conv41",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 22212608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5392192
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5396288
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 23031808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 169
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1255609399
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "name": "img_conv42",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 22212608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5396544
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5400640
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 23236608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 113
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1332492353
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "name": "img_conv43",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 23031808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5400896
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5401920
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 23441408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 169
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 180
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1516772354
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 37
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "name": "img_conv44",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 23441408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5402176
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5411392
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 23646208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 32
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 32
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 180
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 124
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1463527105
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "name": "cat8_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 23646208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 23851008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 204800
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 124
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 474375149
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "name": "cat8_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 23236608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 24055808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 204800
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 113
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 495824519
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "name": "img_conv45",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 23851008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5411648
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5415744
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 24260608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 140
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1324767976
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "name": "img_conv46",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 24260608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5416256
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5453120
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 24670208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 140
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 153
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1435375405
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "name": "cat9_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 24670208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 24772608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 153
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 680895757
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "name": "cat9_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 21700608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 24875008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 103
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 438130137
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "name": "img_conv47",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 24772608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5453632
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5461824
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 24977408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 146
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1104744885
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "name": "img_conv48",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 24772608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5462336
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5470528
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25079808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 135
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1231996323
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 82,
+      "name": "img_conv49",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 24977408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5471040
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5475136
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25182208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 146
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 162
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1250271564
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 83,
+      "name": "img_conv50",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25182208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5475648
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5512512
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25284608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 64
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 162
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 143
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1945515074
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 84,
+      "name": "cat10_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25284608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25387008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 143
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 621274830
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 85,
+      "name": "cat10_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25079808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25489408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 102400
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 135
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 556456920
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 86,
+      "name": "img_conv51",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25387008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5513024
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5529408
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25591808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 121
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1393173948
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 87,
+      "name": "img_conv52",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25591808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5530432
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5677888
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25796608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 121
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 130
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1889103668
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 88,
+      "name": "cat11_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25796608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25847808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 130
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 567395014
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 89,
+      "name": "cat11_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 20215808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25899008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 154
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 523457068
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 90,
+      "name": "img_conv53",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25847808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5678912
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5711680
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 25950208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 133
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 2046481811
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 40
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 91,
+      "name": "img_conv54",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25847808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5712704
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5745472
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26001408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 139
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1160383136
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 92,
+      "name": "img_conv55",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25950208
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5746496
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5762880
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26052608
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 133
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 144
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1255238692
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 93,
+      "name": "img_conv56",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 26052608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5763904
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5911360
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26103808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 128
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 3
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 1
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 144
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 129
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 2044080902
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 94,
+      "name": "cat12_part0",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 26103808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26155008
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 129
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 663374342
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 95,
+      "name": "cat12_part1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 26001408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 0
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 4194304
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26206208
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 51200
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 0
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 0
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 0
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 0
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 139
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 0
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 435074424
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 28
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 96,
+      "name": "img_conv57",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 26155008
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5912384
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5977920
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26257408
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 256
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 0
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 158
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 2076072449
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 1
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 97,
+      "name": "out1",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 26257408
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5979968
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5984576
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26359808
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 20
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 20
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 256
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 18
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 158
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 118
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1425631155
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 39
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 98,
+      "name": "out2",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 25591808
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5984768
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5987072
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26367104
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 40
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 40
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 128
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 18
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 121
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 98
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1084437964
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "index": 99,
+      "name": "out3",
+      "register_writes": [
+        {
+          "name": "input_V",
+          "offset": 16,
+          "value": 24260608
+        },
+        {
+          "name": "weights_V",
+          "offset": 24,
+          "value": 5987264
+        },
+        {
+          "name": "bias_V",
+          "offset": 32,
+          "value": 5988416
+        },
+        {
+          "name": "output_V",
+          "offset": 40,
+          "value": 26395904
+        },
+        {
+          "name": "in_h",
+          "offset": 48,
+          "value": 80
+        },
+        {
+          "name": "in_w",
+          "offset": 56,
+          "value": 80
+        },
+        {
+          "name": "in_c",
+          "offset": 64,
+          "value": 64
+        },
+        {
+          "name": "out_c",
+          "offset": 72,
+          "value": 18
+        },
+        {
+          "name": "kernel",
+          "offset": 80,
+          "value": 1
+        },
+        {
+          "name": "stride",
+          "offset": 88,
+          "value": 1
+        },
+        {
+          "name": "pad",
+          "offset": 96,
+          "value": 0
+        },
+        {
+          "name": "input_zero_point",
+          "offset": 104,
+          "value": 140
+        },
+        {
+          "name": "weight_zero_point",
+          "offset": 112,
+          "value": 0
+        },
+        {
+          "name": "output_zero_point",
+          "offset": 120,
+          "value": 102
+        },
+        {
+          "name": "scale_multiplier",
+          "offset": 128,
+          "value": 1609116960
+        },
+        {
+          "name": "scale_shift",
+          "offset": 136,
+          "value": 38
+        },
+        {
+          "name": "relu",
+          "offset": 144,
+          "value": 0
+        },
+        {
+          "name": "ap_start",
+          "offset": 0,
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "output_base": 26359808,
+  "output_bytes": 151296,
+  "detection_heads": {
+    "out1": {
+      "base": 26359808,
+      "bytes": 7200,
+      "shape": [
+        1,
+        18,
+        20,
+        20
+      ]
+    },
+    "out2": {
+      "base": 26367104,
+      "bytes": 28800,
+      "shape": [
+        1,
+        18,
+        40,
+        40
+      ]
+    },
+    "out3": {
+      "base": 26395904,
+      "bytes": 115200,
+      "shape": [
+        1,
+        18,
+        80,
+        80
+      ]
+    }
+  }
+}

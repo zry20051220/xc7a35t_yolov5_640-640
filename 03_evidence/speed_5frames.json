@@ -1,0 +1,92 @@
+{
+  "source": "real FPGA UDP output",
+  "graph_sha256": "458b8ae436395febaa1e8c7eb4f6fe5f9f3f1be38423594b553336ed8bacda34",
+  "weights_sha256": "8e16eb1c7135ea7b7acc9107c1cce6c6c6f562710ba95809afc8a08a1c1c7f98",
+  "repeated_same_image": true,
+  "repeats": 5,
+  "median_seconds": 2.478380599990487,
+  "median_fps": 0.40348927844409305,
+  "all_heads_crc_match": true,
+  "frames": [
+    {
+      "frame_id": 22510,
+      "seconds": 2.5133847999968566,
+      "count": 5,
+      "stages": {
+        "preprocess": 0.029877599998144433,
+        "input_send": 0.014245900005334988,
+        "fpga_and_head_receive": 2.453415899988613,
+        "head_unpack_and_decode": 0.015845400004764087
+      },
+      "heads_crc32": {
+        "out1": "abb6a0a7",
+        "out2": "0964a015",
+        "out3": "194ce993"
+      }
+    },
+    {
+      "frame_id": 22511,
+      "seconds": 2.4774633000051836,
+      "count": 5,
+      "stages": {
+        "preprocess": 0.008074299999861978,
+        "input_send": 0.012604600007762201,
+        "fpga_and_head_receive": 2.453353499993682,
+        "head_unpack_and_decode": 0.0034309000038774684
+      },
+      "heads_crc32": {
+        "out1": "abb6a0a7",
+        "out2": "0964a015",
+        "out3": "194ce993"
+      }
+    },
+    {
+      "frame_id": 22512,
+      "seconds": 2.478749699992477,
+      "count": 5,
+      "stages": {
+        "preprocess": 0.008276399996248074,
+        "input_send": 0.013602899998659268,
+        "fpga_and_head_receive": 2.453425799991237,
+        "head_unpack_and_decode": 0.003444600006332621
+      },
+      "heads_crc32": {
+        "out1": "abb6a0a7",
+        "out2": "0964a015",
+        "out3": "194ce993"
+      }
+    },
+    {
+      "frame_id": 22513,
+      "seconds": 2.4778858000063337,
+      "count": 5,
+      "stages": {
+        "preprocess": 0.008584100010921247,
+        "input_send": 0.012311099999351427,
+        "fpga_and_head_receive": 2.453566599986516,
+        "head_unpack_and_decode": 0.003424000009545125
+      },
+      "heads_crc32": {
+        "out1": "abb6a0a7",
+        "out2": "0964a015",
+        "out3": "194ce993"
+      }
+    },
+    {
+      "frame_id": 22514,
+      "seconds": 2.478380599990487,
+      "count": 5,
+      "stages": {
+        "preprocess": 0.00839619999169372,
+        "input_send": 0.012611500002094544,
+        "fpga_and_head_receive": 2.4533550000051036,
+        "head_unpack_and_decode": 0.004017899991595186
+      },
+      "heads_crc32": {
+        "out1": "abb6a0a7",
+        "out2": "0964a015",
+        "out3": "194ce993"
+      }
+    }
+  ]
+}

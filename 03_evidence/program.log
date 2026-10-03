@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Oct  3 16:48:21 2026
+# Process ID: 31932
+# Current directory: D:/codex/2026-09-27/yong
+# Command line: vivado.exe -mode batch -notrace -source tools/program_board.tcl -log outputs/head_training/qat_board_candidate640_upwords_v1/board/program.log -journal outputs/head_training/qat_board_candidate640_upwords_v1/board/program.jou -tclargs outputs/head_training/qat_board_candidate640_upwords_v1/board/head_qat640_candidate.bit
+# Log file: D:/codex/2026-09-27/yong/outputs/head_training/qat_board_candidate640_upwords_v1/board/program.log
+# Journal file: D:/codex/2026-09-27/yong\outputs/head_training/qat_board_candidate640_upwords_v1/board/program.jou
+#-----------------------------------------------------------
+source tools/program_board.tcl -notrace
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/B1767B26ABCD
+INFO: [Labtools 27-3164] End of startup status: HIGH
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+PROGRAMMED=D:/codex/2026-09-27/yong/outputs/head_training/qat_board_candidate640_upwords_v1/board/head_qat640_candidate.bit
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/B1767B26ABCD
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/codex/2026-09-27/yong/.Xil/Vivado-31932-LAPTOP-1K937BIF/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Oct  3 16:48:33 2026...
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 16:48:33 2026...

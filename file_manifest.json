@@ -1,0 +1,322 @@
+﻿[
+    {
+        "file":  "README.md",
+        "bytes":  2538,
+        "sha256":  "85ae641165d7d549607205fa85d9ede6e2283c34c9a750927780ce32a971c00c"
+    },
+    {
+        "file":  "01_run\\head_qat640_candidate.bit",
+        "bytes":  2192129,
+        "sha256":  "aa3fc282497eee9f76a3f9ffe2ef101ffdbea095c6ac13b833e2800262629051"
+    },
+    {
+        "file":  "01_run\\network_graph_640.json",
+        "bytes":  81015,
+        "sha256":  "458b8ae436395febaa1e8c7eb4f6fe5f9f3f1be38423594b553336ed8bacda34"
+    },
+    {
+        "file":  "01_run\\numerical_smoke.json",
+        "bytes":  960,
+        "sha256":  "b5324474367efa21671a147a0b5dba6170faf31e40397d4d2e79e97465c972d7"
+    },
+    {
+        "file":  "01_run\\program_board.tcl",
+        "bytes":  681,
+        "sha256":  "0c67db73c7539d458b58dfc747b91ac2cec84e8bab0cb6e99603cb5d242e979e"
+    },
+    {
+        "file":  "01_run\\run.ps1",
+        "bytes":  1524,
+        "sha256":  "407fd8d8add9d5267cedd8b71e75e6cab2edc79811e37df8c0031deda479ff1a"
+    },
+    {
+        "file":  "01_run\\weights.bin",
+        "bytes":  2318592,
+        "sha256":  "8e16eb1c7135ea7b7acc9107c1cce6c6c6f562710ba95809afc8a08a1c1c7f98"
+    },
+    {
+        "file":  "01_run\\host\\decode_detections.py",
+        "bytes":  7248,
+        "sha256":  "97fc739d46b0c5120db744173a286bbdccc81c5c90562561968823e2e1e840e3"
+    },
+    {
+        "file":  "01_run\\host\\eth_protocol.py",
+        "bytes":  1551,
+        "sha256":  "3a07a61c3d8c85f1debd6695d43948484370d23df488454e3a8d22142c7f66d5"
+    },
+    {
+        "file":  "01_run\\host\\live_detector.py",
+        "bytes":  9859,
+        "sha256":  "ae0633e2b3e129701510a3ba3e90860c6186daaf5915ef2a2be8cce3d214751b"
+    },
+    {
+        "file":  "01_run\\host\\model_input.py",
+        "bytes":  2352,
+        "sha256":  "caebabad315661ec0f477927df28030f805d32b92a2b951fc8aef0da36e81206"
+    },
+    {
+        "file":  "01_run\\host\\preprocess.py",
+        "bytes":  477,
+        "sha256":  "2fb2a4bef93cde5e4cde5accdff55f71719ce0404ab038110210ce5c2b7671e6"
+    },
+    {
+        "file":  "01_run\\host\\receive_first_layer_crc.py",
+        "bytes":  1713,
+        "sha256":  "2fbc3316a8d9047db9aa58cefc88f00e763b2bdd64c9c6e95a64f44a22940881"
+    },
+    {
+        "file":  "01_run\\host\\run_detector.py",
+        "bytes":  7948,
+        "sha256":  "3ba4ab072e4aa831a0a5392b65a6afd1b5c00f9c735ba752f47c896c4ed39034"
+    },
+    {
+        "file":  "01_run\\host\\run_first_layer_crc_test.py",
+        "bytes":  3371,
+        "sha256":  "4250c1e6db390e219bc1112ecff3a0fcc7b283dd68a474573188a09935311c2e"
+    },
+    {
+        "file":  "01_run\\host\\send_first_layer_weights.py",
+        "bytes":  2581,
+        "sha256":  "660f56f767eb58521ebe88af0dbbc4ec3d173119b525323ebe0660502fae57d3"
+    },
+    {
+        "file":  "01_run\\host\\send_reference_first_layer_input.py",
+        "bytes":  2035,
+        "sha256":  "08bdaf916263e99d4f0d94ab4cd98103068e3a49029b384673fe61854f8cdc4b"
+    },
+    {
+        "file":  "01_run\\host\\send_test_frame.py",
+        "bytes":  1578,
+        "sha256":  "03262ad472444346d6964b1fe6325605a3905dabe2d0e0214e68f3b1f32da378"
+    },
+    {
+        "file":  "01_run\\host\\tensor_protocol.py",
+        "bytes":  1803,
+        "sha256":  "84e3d407b04b381e79b2d248bf667235acf26091c136959b7a0514fdc59517a5"
+    },
+    {
+        "file":  "01_run\\host\\test_decode_detections.py",
+        "bytes":  2140,
+        "sha256":  "6af391932813a498ad2daea02835a811d08e6c05ee15d1c6184265c7d825b6db"
+    },
+    {
+        "file":  "01_run\\host\\test_head_dataset.py",
+        "bytes":  1456,
+        "sha256":  "a1ae379a3f47d5878dcc1aa9a339b976ebb17ec0e4172a2bbbecb00a61a3b521"
+    },
+    {
+        "file":  "01_run\\host\\test_head_evaluation.py",
+        "bytes":  1600,
+        "sha256":  "becd0f08ff78f497202993bb1451c8f93ff68ecbc3ac8edd06ec7d6e4010b31e"
+    },
+    {
+        "file":  "01_run\\host\\test_head_qat.py",
+        "bytes":  1227,
+        "sha256":  "02d085d735d5cd81d0c5af1ae0950a44c160f999cc0371609e7dfc98c1f958bf"
+    },
+    {
+        "file":  "01_run\\host\\test_live_detector.py",
+        "bytes":  5772,
+        "sha256":  "1ec1d5b71a7071df9def970e326b7af1f4e01b246d7bf78fcac99ad26695fc8a"
+    },
+    {
+        "file":  "01_run\\host\\test_model_input.py",
+        "bytes":  1543,
+        "sha256":  "fce76f367f0d0d17e7f92a33782ef6899989bc5cd0cf1ddbae25c8277564a6a2"
+    },
+    {
+        "file":  "01_run\\host\\test_realtime_release.py",
+        "bytes":  2201,
+        "sha256":  "79edf0f74e6486fdec28cc6e697b174d6486cf2c83e165c02f88e2fc96e12ede"
+    },
+    {
+        "file":  "01_run\\host\\test_tensor_protocol.py",
+        "bytes":  1238,
+        "sha256":  "a59cb2a993a4a6d415f6716a0ea12c467332112e543a90258ec3c8258c9b7431"
+    },
+    {
+        "file":  "01_run\\host\\test_weight_pages.py",
+        "bytes":  1043,
+        "sha256":  "096fc7e6925a5fce3786c555ef21fbb3769ea4169464b66cfe3f6252428a8d2c"
+    },
+    {
+        "file":  "01_run\\host\\test_weight_upload.py",
+        "bytes":  968,
+        "sha256":  "a06e1d3e6ea5d609904ca077f50f0ffe30ec78a1edc31a22ac4da165f165609a"
+    },
+    {
+        "file":  "01_run\\host\\upload_weight_pages.py",
+        "bytes":  2589,
+        "sha256":  "41b0ac55ca6520f1798b0bdfd03754ce1bc70a198364228167ea6f303ed1c8c3"
+    },
+    {
+        "file":  "02_sources\\build_tools\\build_head640_board.tcl",
+        "bytes":  3779,
+        "sha256":  "24e86baedf990610354c481d0f59333c6fc1465f54408e1e2d5f3da51f4f5f3a"
+    },
+    {
+        "file":  "02_sources\\constraints\\ad7606C_ddr3_rgmii.xdc",
+        "bytes":  5037,
+        "sha256":  "9d4102924a5837ddcf9b6ef0087558e1ac5d6a320a5963191b69502429bc95f4"
+    },
+    {
+        "file":  "02_sources\\constraints\\yolo_cdc.xdc",
+        "bytes":  413,
+        "sha256":  "a0022d852f5002d77bfd0c20eba93ef2a44400704da74543c81cf22cf45abdfd"
+    },
+    {
+        "file":  "02_sources\\hls\\npu_head640_upwords.cpp",
+        "bytes":  322,
+        "sha256":  "7bf0ad9f89eba05999d272eab01cc489345254fa5481c0c6e3416c5e8f87d3a6"
+    },
+    {
+        "file":  "02_sources\\hls\\npu_packed.cpp",
+        "bytes":  19156,
+        "sha256":  "1a090ad12bebb5c400f8378a8227e18a7b094ba098d996bbc604fd46f4fe1f3d"
+    },
+    {
+        "file":  "02_sources\\rtl\\acx720_yolo_board_top.v",
+        "bytes":  17384,
+        "sha256":  "2cec26dfe72eda1980597e32333526745fa3c87e47951e5536ca46c4a90eefa0"
+    },
+    {
+        "file":  "02_sources\\rtl\\ddr3_ctrl_2port.v",
+        "bytes":  30207,
+        "sha256":  "83d1a0e183a5a7854f0f9f15c5090ff5c53fb6203bb5d72265a3b47faae679b9"
+    },
+    {
+        "file":  "02_sources\\rtl\\fifo2mig_axi.v",
+        "bytes":  16057,
+        "sha256":  "0ad98f90de33de83bff0e0ac4e485be3ed258c8ffb58d1e974e904906a0d0f26"
+    },
+    {
+        "file":  "02_sources\\rtl\\npu_realtime320_launcher.v",
+        "bytes":  180479,
+        "sha256":  "0ae2b48d4a8e51939c1a4fdb2969cff60fdbb501eab0ba849eb290a1db26a8ee"
+    },
+    {
+        "file":  "02_sources\\rtl\\yolo_packet_parser.v",
+        "bytes":  3077,
+        "sha256":  "39f784c393a1cacb706b7814a446193f2ef1c5c10e85d1a71805c1f0d5d39b1d"
+    },
+    {
+        "file":  "03_evidence\\drc.rpt",
+        "bytes":  68888,
+        "sha256":  "38723ad42bb1b907fbce25c41b4b251ee83a7edebc18d7007158c858e940c801"
+    },
+    {
+        "file":  "03_evidence\\manifest.json",
+        "bytes":  50110,
+        "sha256":  "be204dc0f324aac774354aae16e6735b4044b098efdec309c789ffd130bb593c"
+    },
+    {
+        "file":  "03_evidence\\numerical_smoke.json",
+        "bytes":  960,
+        "sha256":  "b5324474367efa21671a147a0b5dba6170faf31e40397d4d2e79e97465c972d7"
+    },
+    {
+        "file":  "03_evidence\\program.log",
+        "bytes":  1985,
+        "sha256":  "848a1d08700ea0dd38848830aded134f6fabe8e7657b9702b16078300ff84500"
+    },
+    {
+        "file":  "03_evidence\\realtime640_launch.json",
+        "bytes":  197883,
+        "sha256":  "377715cecfa0dd525468f42976cc91d2176ba3b5d342ff3e83dfd7271f877124"
+    },
+    {
+        "file":  "03_evidence\\speed_5frames.json",
+        "bytes":  2619,
+        "sha256":  "1e8210d332d618d202d1bcb4c173f8b6ea2063639d99cc22fa7d96f36ec9df28"
+    },
+    {
+        "file":  "03_evidence\\speed_comparison.json",
+        "bytes":  576,
+        "sha256":  "8b8a90c79a02996951b6a70c3463741bdba16a4ac2301e9f348d7e366ff53467"
+    },
+    {
+        "file":  "03_evidence\\timing.rpt",
+        "bytes":  475760,
+        "sha256":  "6cfa05d20bc8eb2489475798a1c5ea7802b9a9bcaef20c4f13df1c4041ea2386"
+    },
+    {
+        "file":  "03_evidence\\utilization.rpt",
+        "bytes":  13237,
+        "sha256":  "bbe24241e5b1e1d8d0c955041800dab54b936ca12b562b2463768680364baa3d"
+    },
+    {
+        "file":  "03_evidence\\hardware_image1\\detections.jpg",
+        "bytes":  135574,
+        "sha256":  "cc6401bd117deb57fa09da4c58d829a43da4f546fff524b58cb81e373e988a15"
+    },
+    {
+        "file":  "03_evidence\\hardware_image1\\out1.npy",
+        "bytes":  7328,
+        "sha256":  "5d2c658bb6a483b605abe9c64cca83cbb503405dcc0dafc4306a32a92ffbe001"
+    },
+    {
+        "file":  "03_evidence\\hardware_image1\\out2.npy",
+        "bytes":  28928,
+        "sha256":  "2de5a55d276061643b0270b9ea7868c539a948499945a802cc3077d8412ed6d5"
+    },
+    {
+        "file":  "03_evidence\\hardware_image1\\out3.npy",
+        "bytes":  115328,
+        "sha256":  "5d6990bd15e69c47e02120a354307db70ca6538c70674ed498cc5aa62dee65ef"
+    },
+    {
+        "file":  "03_evidence\\hardware_image1\\result.json",
+        "bytes":  1959,
+        "sha256":  "5f2696bbbcc1350416df303a35ed2bbe9eb3abd02c00a9ba6dd545969bd91140"
+    },
+    {
+        "file":  "03_evidence\\hardware_scut_test1\\detections.jpg",
+        "bytes":  184212,
+        "sha256":  "981d632596e12ba02d6804c057184f5edb8af8b3ec7ae9dca70e71f1331f0812"
+    },
+    {
+        "file":  "03_evidence\\hardware_scut_test1\\out1.npy",
+        "bytes":  7328,
+        "sha256":  "ac3079c6668626d0aaeafe01379505ea20d547b5366d1565df8ee86d98aa088f"
+    },
+    {
+        "file":  "03_evidence\\hardware_scut_test1\\out2.npy",
+        "bytes":  28928,
+        "sha256":  "bb9015e43fc2a42875e9c807045f5e04282ede6d0b7b9f5758ac8aa8be8ed11b"
+    },
+    {
+        "file":  "03_evidence\\hardware_scut_test1\\out3.npy",
+        "bytes":  115328,
+        "sha256":  "e12d67923d6b3e539a0f497aa6d9bc3f6994c491f8b7621fe5e11d403372485c"
+    },
+    {
+        "file":  "03_evidence\\hardware_scut_test1\\result.json",
+        "bytes":  1640,
+        "sha256":  "8ba1049bc689f67cb08f3baa52b22d906a8d4d707299179f5f11bafffdd550f9"
+    },
+    {
+        "file":  "04_docs\\BOARD_README.md",
+        "bytes":  9266,
+        "sha256":  "5ce85e5dfa01a53dcdb98bf3481fc950258f0c116b87a74022e1b926f55879ce"
+    },
+    {
+        "file":  "04_docs\\HEAD_640_ACCURACY_UPDATE.md",
+        "bytes":  2537,
+        "sha256":  "f8e5c159e93acfdf45224e24d76bc50e99d1247f0e5ac448d813cace74327dd9"
+    },
+    {
+        "file":  "04_docs\\HEAD_640_CLOCK105_STATUS.md",
+        "bytes":  3187,
+        "sha256":  "e2244439b3fc25371587a8ae8832bed2872691c78400875d904822ea4b2b8930"
+    },
+    {
+        "file":  "04_docs\\HEAD_640_MEMORY_SPEED_STATUS.md",
+        "bytes":  3524,
+        "sha256":  "79a9cfbbccc8243ddadbba3b450c5074d78276eff7029328a8994c2f5e2839fc"
+    },
+    {
+        "file":  "04_docs\\HEAD_640_TRAINING_STATUS.md",
+        "bytes":  5834,
+        "sha256":  "839c9da742ae10fe2a58a51cfb41f54160e247e380d6f9a36cfd8e17126f17d0"
+    }
+]

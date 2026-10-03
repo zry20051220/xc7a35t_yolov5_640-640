@@ -1,0 +1,12 @@
+#define NPU_PACKED_PE 32
+#define NPU_ROWS_CAPACITY 16384
+#define NPU_MAX_WIDTH 320
+#define NPU_MAX_TAPS 1152
+#define NPU_BURST_ROWS 1
+#define NPU_SPECIAL_CACHE 1
+#define NPU_PACKED_CACHE 1
+#define NPU_SINGLE_ACC 1
+#define NPU_SINGLE_ROW_K1 1
+#define NPU_STORE_FOUR 1
+#define NPU_UPSAMPLE_WORDS 1
+#include "npu_packed.cpp"

@@ -1,0 +1,13 @@
+{
+  "baseline_seconds": 2.540244400006486,
+  "candidate_seconds": 2.478380599990487,
+  "seconds_saved": 0.061863800015999004,
+  "latency_reduction_percent": 2.4353483474204705,
+  "speedup": 1.024961380030265,
+  "baseline_fps": 0.393662908969486,
+  "candidate_fps": 0.40348927844409305,
+  "graph_sha256": "458b8ae436395febaa1e8c7eb4f6fe5f9f3f1be38423594b553336ed8bacda34",
+  "weights_sha256": "8e16eb1c7135ea7b7acc9107c1cce6c6c6f562710ba95809afc8a08a1c1c7f98",
+  "repeats": 5,
+  "scope": "same-image five-frame numerical benchmark; not video stability acceptance"
+}

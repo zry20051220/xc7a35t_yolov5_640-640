@@ -1,0 +1,30 @@
+{
+  "numerical_smoke_validated": true,
+  "accuracy_validated": false,
+  "long_run_validated": false,
+  "programming_log_bound": true,
+  "firmware_self_identification_available": false,
+  "bit_sha256": "aa3fc282497eee9f76a3f9ffe2ef101ffdbea095c6ac13b833e2800262629051",
+  "graph_sha256": "458b8ae436395febaa1e8c7eb4f6fe5f9f3f1be38423594b553336ed8bacda34",
+  "weights_sha256": "8e16eb1c7135ea7b7acc9107c1cce6c6c6f562710ba95809afc8a08a1c1c7f98",
+  "tests": [
+    {
+      "report": "hardware_image1/result.json",
+      "frame_id": 22502,
+      "count": 7,
+      "elapsed_seconds": 2.490065499994671
+    },
+    {
+      "report": "hardware_scut_test1/result.json",
+      "frame_id": 22501,
+      "count": 5,
+      "elapsed_seconds": 2.4906071000004886
+    }
+  ],
+  "known_count_example": {
+    "id": "PartA_00001",
+    "ground_truth": 5,
+    "predicted": 5
+  },
+  "status": "experimental head prototype; two-image numerical smoke only"
+}

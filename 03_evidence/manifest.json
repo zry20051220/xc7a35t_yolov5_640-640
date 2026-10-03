@@ -1,0 +1,2210 @@
+{
+  "format": "head-qat-adaptive-shift-candidate-v1",
+  "bias_encoding": "signed_int64_output_scale_per_layer_shift",
+  "alignment": 64,
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "input_dtype": "uint8",
+  "first_conv_input_shape": [
+    1,
+    12,
+    320,
+    320
+  ],
+  "first_conv_input_layout": "focus-chw",
+  "class_count": 1,
+  "head_shapes": [
+    [
+      1,
+      18,
+      20,
+      20
+    ],
+    [
+      1,
+      18,
+      40,
+      40
+    ],
+    [
+      1,
+      18,
+      80,
+      80
+    ]
+  ],
+  "layer_count": 60,
+  "blob_bytes": 2318592,
+  "layers": [
+    {
+      "index": 0,
+      "name": "backbone.conv1.conv",
+      "input_source": "quant",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.003904778277501464,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 0,
+        "bytes": 1728,
+        "dtype": "int8",
+        "shape": [
+          16,
+          12,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.10205905139446259,
+      "weight_zero_point": 0,
+      "output_scale": 0.3023628294467926,
+      "output_zero_point": 132,
+      "scale_multiplier": 1449169990,
+      "scale_shift": 40,
+      "bias": {
+        "offset": 1728,
+        "bytes": 128,
+        "dtype": "int64",
+        "shape": [
+          16
+        ]
+      }
+    },
+    {
+      "index": 1,
+      "name": "backbone.conv2.conv",
+      "input_source": "img_conv1",
+      "kernel": 3,
+      "stride": 2,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.3023628294467926,
+      "input_zero_point": 132,
+      "weight": {
+        "offset": 1856,
+        "bytes": 4608,
+        "dtype": "int8",
+        "shape": [
+          32,
+          16,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.016946950927376747,
+      "weight_zero_point": 0,
+      "output_scale": 0.9673062562942505,
+      "output_zero_point": 129,
+      "scale_multiplier": 1456115454,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 6464,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "name": "backbone.conv3.conv",
+      "input_source": "img_conv2",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.9673062562942505,
+      "input_zero_point": 129,
+      "weight": {
+        "offset": 6720,
+        "bytes": 512,
+        "dtype": "int8",
+        "shape": [
+          16,
+          32,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.0057596806436777115,
+      "weight_zero_point": 0,
+      "output_scale": 0.2943979799747467,
+      "output_zero_point": 171,
+      "scale_multiplier": 1300491203,
+      "scale_shift": 36,
+      "bias": {
+        "offset": 7232,
+        "bytes": 128,
+        "dtype": "int64",
+        "shape": [
+          16
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "name": "backbone.conv4.conv",
+      "input_source": "img_conv2",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.9673062562942505,
+      "input_zero_point": 129,
+      "weight": {
+        "offset": 7360,
+        "bytes": 512,
+        "dtype": "int8",
+        "shape": [
+          16,
+          32,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.009215268306434155,
+      "weight_zero_point": 0,
+      "output_scale": 0.6274076700210571,
+      "output_zero_point": 204,
+      "scale_multiplier": 1952684132,
+      "scale_shift": 37,
+      "bias": {
+        "offset": 7872,
+        "bytes": 128,
+        "dtype": "int64",
+        "shape": [
+          16
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "name": "backbone.conv5.conv",
+      "input_source": "img_conv3",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.2943979799747467,
+      "input_zero_point": 171,
+      "weight": {
+        "offset": 8000,
+        "bytes": 256,
+        "dtype": "int8",
+        "shape": [
+          16,
+          16,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.021563127636909485,
+      "weight_zero_point": 0,
+      "output_scale": 0.27608031034469604,
+      "output_zero_point": 177,
+      "scale_multiplier": 1580123342,
+      "scale_shift": 36,
+      "bias": {
+        "offset": 8256,
+        "bytes": 128,
+        "dtype": "int64",
+        "shape": [
+          16
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "name": "backbone.conv6.conv",
+      "input_source": "img_conv5",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.27608031034469604,
+      "input_zero_point": 177,
+      "weight": {
+        "offset": 8384,
+        "bytes": 2304,
+        "dtype": "int8",
+        "shape": [
+          16,
+          16,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.006272712256759405,
+      "weight_zero_point": 0,
+      "output_scale": 0.22771549224853516,
+      "output_zero_point": 140,
+      "scale_multiplier": 2090441688,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 10688,
+        "bytes": 128,
+        "dtype": "int64",
+        "shape": [
+          16
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "name": "backbone.conv7.conv",
+      "input_source": "cat0",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.12139634788036346,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 10816,
+        "bytes": 1024,
+        "dtype": "int8",
+        "shape": [
+          32,
+          32,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.005210919305682182,
+      "weight_zero_point": 0,
+      "output_scale": 0.13716240227222443,
+      "output_zero_point": 141,
+      "scale_multiplier": 1267724028,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 11840,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "name": "backbone.conv8.conv",
+      "input_source": "img_conv7",
+      "kernel": 3,
+      "stride": 2,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.13716240227222443,
+      "input_zero_point": 141,
+      "weight": {
+        "offset": 12096,
+        "bytes": 18432,
+        "dtype": "int8",
+        "shape": [
+          64,
+          32,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0032886986155062914,
+      "weight_zero_point": 0,
+      "output_scale": 0.09000533074140549,
+      "output_zero_point": 149,
+      "scale_multiplier": 1377624194,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 30528,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "name": "backbone.conv9.conv",
+      "input_source": "img_conv8",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.09000533074140549,
+      "input_zero_point": 149,
+      "weight": {
+        "offset": 31040,
+        "bytes": 2048,
+        "dtype": "int8",
+        "shape": [
+          32,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.0028635277412831783,
+      "weight_zero_point": 0,
+      "output_scale": 0.03999223932623863,
+      "output_zero_point": 146,
+      "scale_multiplier": 1771469745,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 33088,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "name": "backbone.conv10.conv",
+      "input_source": "img_conv8",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.09000533074140549,
+      "input_zero_point": 149,
+      "weight": {
+        "offset": 33344,
+        "bytes": 2048,
+        "dtype": "int8",
+        "shape": [
+          32,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.008735350333154202,
+      "weight_zero_point": 0,
+      "output_scale": 0.07789023965597153,
+      "output_zero_point": 130,
+      "scale_multiplier": 1387315884,
+      "scale_shift": 37,
+      "bias": {
+        "offset": 35392,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "name": "backbone.conv11.conv",
+      "input_source": "img_conv9",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.03999223932623863,
+      "input_zero_point": 146,
+      "weight": {
+        "offset": 35648,
+        "bytes": 1024,
+        "dtype": "int8",
+        "shape": [
+          32,
+          32,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.017597096040844917,
+      "weight_zero_point": 0,
+      "output_scale": 0.06339064985513687,
+      "output_zero_point": 125,
+      "scale_multiplier": 1525813182,
+      "scale_shift": 37,
+      "bias": {
+        "offset": 36672,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "name": "backbone.conv12.conv",
+      "input_source": "img_conv11",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.06339064985513687,
+      "input_zero_point": 125,
+      "weight": {
+        "offset": 36928,
+        "bytes": 9216,
+        "dtype": "int8",
+        "shape": [
+          32,
+          32,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0027044645976275206,
+      "weight_zero_point": 0,
+      "output_scale": 0.05290738865733147,
+      "output_zero_point": 148,
+      "scale_multiplier": 1781394098,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 46144,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "name": "backbone.conv13.conv",
+      "input_source": "add1",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.0283085685223341,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 46400,
+        "bytes": 1024,
+        "dtype": "int8",
+        "shape": [
+          32,
+          32,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.007699376437813044,
+      "weight_zero_point": 0,
+      "output_scale": 0.0634317621588707,
+      "output_zero_point": 133,
+      "scale_multiplier": 1889019831,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 47424,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "name": "backbone.conv14.conv",
+      "input_source": "img_conv13",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.0634317621588707,
+      "input_zero_point": 133,
+      "weight": {
+        "offset": 47680,
+        "bytes": 9216,
+        "dtype": "int8",
+        "shape": [
+          32,
+          32,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0054055978544056416,
+      "weight_zero_point": 0,
+      "output_scale": 0.09206010401248932,
+      "output_zero_point": 133,
+      "scale_multiplier": 2047617722,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 56896,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "name": "backbone.conv15.conv",
+      "input_source": "cat1",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.05237452685832977,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 57152,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.005303939338773489,
+      "weight_zero_point": 0,
+      "output_scale": 0.0654253214597702,
+      "output_zero_point": 134,
+      "scale_multiplier": 1167112260,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 61248,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "name": "backbone.conv16.conv",
+      "input_source": "img_conv15",
+      "kernel": 3,
+      "stride": 2,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.0654253214597702,
+      "input_zero_point": 134,
+      "weight": {
+        "offset": 61760,
+        "bytes": 73728,
+        "dtype": "int8",
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.002665031934157014,
+      "weight_zero_point": 0,
+      "output_scale": 0.07780719548463821,
+      "output_zero_point": 151,
+      "scale_multiplier": 1231964949,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 135488,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "name": "backbone.conv17.conv",
+      "input_source": "img_conv16",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.07780719548463821,
+      "input_zero_point": 151,
+      "weight": {
+        "offset": 136512,
+        "bytes": 8192,
+        "dtype": "int8",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.0026081239338964224,
+      "weight_zero_point": 0,
+      "output_scale": 0.04270346090197563,
+      "output_zero_point": 173,
+      "scale_multiplier": 1306245320,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 144704,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "name": "backbone.conv18.conv",
+      "input_source": "img_conv16",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.07780719548463821,
+      "input_zero_point": 151,
+      "weight": {
+        "offset": 145216,
+        "bytes": 8192,
+        "dtype": "int8",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.00491173705086112,
+      "weight_zero_point": 0,
+      "output_scale": 0.08488620817661285,
+      "output_zero_point": 144,
+      "scale_multiplier": 1237535231,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 153408,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "name": "backbone.conv19.conv",
+      "input_source": "img_conv17",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.04270346090197563,
+      "input_zero_point": 173,
+      "weight": {
+        "offset": 153920,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.017194081097841263,
+      "weight_zero_point": 0,
+      "output_scale": 0.10219357162714005,
+      "output_zero_point": 147,
+      "scale_multiplier": 1974959991,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 158016,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "name": "backbone.conv20.conv",
+      "input_source": "img_conv19",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.10219357162714005,
+      "input_zero_point": 147,
+      "weight": {
+        "offset": 158528,
+        "bytes": 36864,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0010317054111510515,
+      "weight_zero_point": 0,
+      "output_scale": 0.044830359518527985,
+      "output_zero_point": 145,
+      "scale_multiplier": 1292935605,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 195392,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 20,
+      "name": "backbone.conv21.conv",
+      "input_source": "add3",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.021420704200863838,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 195904,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.013845829293131828,
+      "weight_zero_point": 0,
+      "output_scale": 0.08023722469806671,
+      "output_zero_point": 146,
+      "scale_multiplier": 2032107362,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 200000,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "name": "backbone.conv22.conv",
+      "input_source": "img_conv21",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.08023722469806671,
+      "input_zero_point": 146,
+      "weight": {
+        "offset": 200512,
+        "bytes": 36864,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0020969253964722157,
+      "weight_zero_point": 0,
+      "output_scale": 0.06572767347097397,
+      "output_zero_point": 147,
+      "scale_multiplier": 1407279784,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 237376,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 22,
+      "name": "backbone.conv23.conv",
+      "input_source": "add4",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.03325185552239418,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 237888,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.005856843199580908,
+      "weight_zero_point": 0,
+      "output_scale": 0.07243387401103973,
+      "output_zero_point": 131,
+      "scale_multiplier": 1478112874,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 241984,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "name": "backbone.conv24.conv",
+      "input_source": "img_conv23",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.07243387401103973,
+      "input_zero_point": 131,
+      "weight": {
+        "offset": 242496,
+        "bytes": 36864,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.002857533050701022,
+      "weight_zero_point": 0,
+      "output_scale": 0.08685386180877686,
+      "output_zero_point": 134,
+      "scale_multiplier": 1310127833,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 279360,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "name": "backbone.conv25.conv",
+      "input_source": "cat2",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.05085872858762741,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 279872,
+        "bytes": 16384,
+        "dtype": "int8",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.002837919630110264,
+      "weight_zero_point": 0,
+      "output_scale": 0.0749678984284401,
+      "output_zero_point": 148,
+      "scale_multiplier": 2116849982,
+      "scale_shift": 40,
+      "bias": {
+        "offset": 296256,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 25,
+      "name": "backbone.conv26.conv",
+      "input_source": "img_conv25",
+      "kernel": 3,
+      "stride": 2,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.0749678984284401,
+      "input_zero_point": 148,
+      "weight": {
+        "offset": 297280,
+        "bytes": 294912,
+        "dtype": "int8",
+        "shape": [
+          256,
+          128,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0015819845721125603,
+      "weight_zero_point": 0,
+      "output_scale": 0.07598194479942322,
+      "output_zero_point": 140,
+      "scale_multiplier": 1716196459,
+      "scale_shift": 40,
+      "bias": {
+        "offset": 592192,
+        "bytes": 2048,
+        "dtype": "int64",
+        "shape": [
+          256
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "name": "backbone.conv27.conv",
+      "input_source": "img_conv26",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.07598194479942322,
+      "input_zero_point": 140,
+      "weight": {
+        "offset": 594240,
+        "bytes": 32768,
+        "dtype": "int8",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.0026522697880864143,
+      "weight_zero_point": 0,
+      "output_scale": 0.04669896885752678,
+      "output_zero_point": 150,
+      "scale_multiplier": 1186207451,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 627008,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "name": "backbone.conv28.conv",
+      "input_source": "img_conv26",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.07598194479942322,
+      "input_zero_point": 140,
+      "weight": {
+        "offset": 628032,
+        "bytes": 32768,
+        "dtype": "int8",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.0049879420548677444,
+      "weight_zero_point": 0,
+      "output_scale": 0.09025939553976059,
+      "output_zero_point": 145,
+      "scale_multiplier": 1154195082,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 660800,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 28,
+      "name": "backbone.conv29.conv",
+      "input_source": "img_conv27",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.04669896885752678,
+      "input_zero_point": 150,
+      "weight": {
+        "offset": 661824,
+        "bytes": 16384,
+        "dtype": "int8",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.020905183628201485,
+      "weight_zero_point": 0,
+      "output_scale": 0.145223468542099,
+      "output_zero_point": 145,
+      "scale_multiplier": 1847839761,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 678208,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "name": "backbone.conv30.conv",
+      "input_source": "img_conv29",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.145223468542099,
+      "input_zero_point": 145,
+      "weight": {
+        "offset": 679232,
+        "bytes": 147456,
+        "dtype": "int8",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0012091471580788493,
+      "weight_zero_point": 0,
+      "output_scale": 0.10606981068849564,
+      "output_zero_point": 145,
+      "scale_multiplier": 1820220485,
+      "scale_shift": 40,
+      "bias": {
+        "offset": 826688,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "name": "backbone.conv31.conv",
+      "input_source": "cat3",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.040356095880270004,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 827712,
+        "bytes": 65536,
+        "dtype": "int8",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.0022854276467114687,
+      "weight_zero_point": 0,
+      "output_scale": 0.09643056988716125,
+      "output_zero_point": 150,
+      "scale_multiplier": 1051626969,
+      "scale_shift": 40,
+      "bias": {
+        "offset": 893248,
+        "bytes": 2048,
+        "dtype": "int64",
+        "shape": [
+          256
+        ]
+      }
+    },
+    {
+      "index": 31,
+      "name": "backbone.conv32.conv",
+      "input_source": "img_conv31",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.09643056988716125,
+      "input_zero_point": 150,
+      "weight": {
+        "offset": 895296,
+        "bytes": 32768,
+        "dtype": "int8",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.002807081211358309,
+      "weight_zero_point": 0,
+      "output_scale": 0.06854608654975891,
+      "output_zero_point": 141,
+      "scale_multiplier": 1085492635,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 928064,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 32,
+      "name": "backbone.conv33.conv",
+      "input_source": "cat4",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.029356785118579865,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 929088,
+        "bytes": 131072,
+        "dtype": "int8",
+        "shape": [
+          256,
+          512,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.001193515257909894,
+      "weight_zero_point": 0,
+      "output_scale": 0.05035237967967987,
+      "output_zero_point": 170,
+      "scale_multiplier": 765096641,
+      "scale_shift": 40,
+      "bias": {
+        "offset": 1060160,
+        "bytes": 2048,
+        "dtype": "int64",
+        "shape": [
+          256
+        ]
+      }
+    },
+    {
+      "index": 33,
+      "name": "backbone.conv34.conv",
+      "input_source": "img_conv33",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.05035237967967987,
+      "input_zero_point": 170,
+      "weight": {
+        "offset": 1062208,
+        "bytes": 32768,
+        "dtype": "int8",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.008134689182043076,
+      "weight_zero_point": 0,
+      "output_scale": 0.05796309933066368,
+      "output_zero_point": 154,
+      "scale_multiplier": 1942447098,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1094976,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "name": "backbone.conv35.conv",
+      "input_source": "cat5",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.029898934066295624,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1096000,
+        "bytes": 16384,
+        "dtype": "int8",
+        "shape": [
+          64,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.003106727497652173,
+      "weight_zero_point": 0,
+      "output_scale": 0.07696332037448883,
+      "output_zero_point": 190,
+      "scale_multiplier": 1327012145,
+      "scale_shift": 40,
+      "bias": {
+        "offset": 1112384,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "name": "backbone.conv36.conv",
+      "input_source": "cat5",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.029898934066295624,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1112896,
+        "bytes": 16384,
+        "dtype": "int8",
+        "shape": [
+          64,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.003858220297843218,
+      "weight_zero_point": 0,
+      "output_scale": 0.04501181095838547,
+      "output_zero_point": 143,
+      "scale_multiplier": 1408919148,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1129280,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 36,
+      "name": "backbone.conv37.conv",
+      "input_source": "img_conv35",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.07696332037448883,
+      "input_zero_point": 190,
+      "weight": {
+        "offset": 1129792,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.007920254953205585,
+      "weight_zero_point": 0,
+      "output_scale": 0.06533841788768768,
+      "output_zero_point": 133,
+      "scale_multiplier": 1282224831,
+      "scale_shift": 37,
+      "bias": {
+        "offset": 1133888,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 37,
+      "name": "backbone.conv38.conv",
+      "input_source": "img_conv37",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.06533841788768768,
+      "input_zero_point": 133,
+      "weight": {
+        "offset": 1134400,
+        "bytes": 36864,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0020140199922025204,
+      "weight_zero_point": 0,
+      "output_scale": 0.05990966409444809,
+      "output_zero_point": 130,
+      "scale_multiplier": 1207550599,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1171264,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "name": "backbone.conv39.conv",
+      "input_source": "cat6",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.025139447301626205,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1171776,
+        "bytes": 16384,
+        "dtype": "int8",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.006182067561894655,
+      "weight_zero_point": 0,
+      "output_scale": 0.06906117498874664,
+      "output_zero_point": 138,
+      "scale_multiplier": 1237158491,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1188160,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 39,
+      "name": "backbone.conv40.conv",
+      "input_source": "img_conv39",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.06906117498874664,
+      "input_zero_point": 138,
+      "weight": {
+        "offset": 1189184,
+        "bytes": 8192,
+        "dtype": "int8",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.005680551752448082,
+      "weight_zero_point": 0,
+      "output_scale": 0.04024449363350868,
+      "output_zero_point": 103,
+      "scale_multiplier": 1339762618,
+      "scale_shift": 37,
+      "bias": {
+        "offset": 1197376,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 40,
+      "name": "backbone.conv41.conv",
+      "input_source": "cat7",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.02940727211534977,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1197888,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          32,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.0030159135349094868,
+      "weight_zero_point": 0,
+      "output_scale": 0.0388319231569767,
+      "output_zero_point": 169,
+      "scale_multiplier": 1255609399,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1201984,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 41,
+      "name": "backbone.conv42.conv",
+      "input_source": "cat7",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.02940727211534977,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1202240,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          32,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.006674446631222963,
+      "weight_zero_point": 0,
+      "output_scale": 0.08097950369119644,
+      "output_zero_point": 113,
+      "scale_multiplier": 1332492353,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1206336,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 42,
+      "name": "backbone.conv43.conv",
+      "input_source": "img_conv41",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.0388319231569767,
+      "input_zero_point": 169,
+      "weight": {
+        "offset": 1206592,
+        "bytes": 1024,
+        "dtype": "int8",
+        "shape": [
+          32,
+          32,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.01941981539130211,
+      "weight_zero_point": 0,
+      "output_scale": 0.06833188980817795,
+      "output_zero_point": 180,
+      "scale_multiplier": 1516772354,
+      "scale_shift": 37,
+      "bias": {
+        "offset": 1207616,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "name": "backbone.conv44.conv",
+      "input_source": "img_conv43",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.06833188980817795,
+      "input_zero_point": 180,
+      "weight": {
+        "offset": 1207872,
+        "bytes": 9216,
+        "dtype": "int8",
+        "shape": [
+          32,
+          32,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.006036796607077122,
+      "weight_zero_point": 0,
+      "output_scale": 0.07747633010149002,
+      "output_zero_point": 124,
+      "scale_multiplier": 1463527105,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1217088,
+        "bytes": 256,
+        "dtype": "int64",
+        "shape": [
+          32
+        ]
+      }
+    },
+    {
+      "index": 44,
+      "name": "backbone.conv45.conv",
+      "input_source": "cat8",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.043841660022735596,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1217344,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.019741954281926155,
+      "weight_zero_point": 0,
+      "output_scale": 0.1795879304409027,
+      "output_zero_point": 140,
+      "scale_multiplier": 1324767976,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1221440,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 45,
+      "name": "backbone.conv46.conv",
+      "input_source": "img_conv45",
+      "kernel": 3,
+      "stride": 2,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.1795879304409027,
+      "input_zero_point": 140,
+      "weight": {
+        "offset": 1221952,
+        "bytes": 36864,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0018185803201049566,
+      "weight_zero_point": 0,
+      "output_scale": 0.06254375725984573,
+      "output_zero_point": 153,
+      "scale_multiplier": 1435375405,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1258816,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 46,
+      "name": "backbone.conv47.conv",
+      "input_source": "cat9",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.024657169356942177,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1259328,
+        "bytes": 8192,
+        "dtype": "int8",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.004199235700070858,
+      "weight_zero_point": 0,
+      "output_scale": 0.05152539163827896,
+      "output_zero_point": 146,
+      "scale_multiplier": 1104744885,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1267520,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 47,
+      "name": "backbone.conv48.conv",
+      "input_source": "cat9",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.024657169356942177,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1268032,
+        "bytes": 8192,
+        "dtype": "int8",
+        "shape": [
+          64,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.00669695483520627,
+      "weight_zero_point": 0,
+      "output_scale": 0.07368532568216324,
+      "output_zero_point": 135,
+      "scale_multiplier": 1231996323,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1276224,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 48,
+      "name": "backbone.conv49.conv",
+      "input_source": "img_conv47",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.05152539163827896,
+      "input_zero_point": 146,
+      "weight": {
+        "offset": 1276736,
+        "bytes": 4096,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.0061831967905163765,
+      "weight_zero_point": 0,
+      "output_scale": 0.07004382461309433,
+      "output_zero_point": 162,
+      "scale_multiplier": 1250271564,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1280832,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 49,
+      "name": "backbone.conv50.conv",
+      "input_source": "img_conv49",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.07004382461309433,
+      "input_zero_point": 162,
+      "weight": {
+        "offset": 1281344,
+        "bytes": 36864,
+        "dtype": "int8",
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.008313006721436977,
+      "weight_zero_point": 0,
+      "output_scale": 0.08226843178272247,
+      "output_zero_point": 143,
+      "scale_multiplier": 1945515074,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1318208,
+        "bytes": 512,
+        "dtype": "int64",
+        "shape": [
+          64
+        ]
+      }
+    },
+    {
+      "index": 50,
+      "name": "backbone.conv51.conv",
+      "input_source": "cat10",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.03554588556289673,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1318720,
+        "bytes": 16384,
+        "dtype": "int8",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.026438672095537186,
+      "weight_zero_point": 0,
+      "output_scale": 0.18542294204235077,
+      "output_zero_point": 121,
+      "scale_multiplier": 1393173948,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1335104,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 51,
+      "name": "backbone.conv52.conv",
+      "input_source": "img_conv51",
+      "kernel": 3,
+      "stride": 2,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.18542294204235077,
+      "input_zero_point": 121,
+      "weight": {
+        "offset": 1336128,
+        "bytes": 147456,
+        "dtype": "int8",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.0011643365724012256,
+      "weight_zero_point": 0,
+      "output_scale": 0.06282840669155121,
+      "output_zero_point": 130,
+      "scale_multiplier": 1889103668,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1483584,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 52,
+      "name": "backbone.conv53.conv",
+      "input_source": "cat11",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.02972421608865261,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1484608,
+        "bytes": 32768,
+        "dtype": "int8",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.004554108716547489,
+      "weight_zero_point": 0,
+      "output_scale": 0.07272868603467941,
+      "output_zero_point": 133,
+      "scale_multiplier": 2046481811,
+      "scale_shift": 40,
+      "bias": {
+        "offset": 1517376,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 53,
+      "name": "backbone.conv54.conv",
+      "input_source": "cat11",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.02972421608865261,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1518400,
+        "bytes": 32768,
+        "dtype": "int8",
+        "shape": [
+          128,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.004525642842054367,
+      "weight_zero_point": 0,
+      "output_scale": 0.06373222917318344,
+      "output_zero_point": 139,
+      "scale_multiplier": 1160383136,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1551168,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 54,
+      "name": "backbone.conv55.conv",
+      "input_source": "img_conv53",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.07272868603467941,
+      "input_zero_point": 133,
+      "weight": {
+        "offset": 1552192,
+        "bytes": 16384,
+        "dtype": "int8",
+        "shape": [
+          128,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.005160099361091852,
+      "weight_zero_point": 0,
+      "output_scale": 0.08218211680650711,
+      "output_zero_point": 144,
+      "scale_multiplier": 1255238692,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1568576,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 55,
+      "name": "backbone.conv56.conv",
+      "input_source": "img_conv55",
+      "kernel": 3,
+      "stride": 1,
+      "pad": 1,
+      "relu": true,
+      "input_scale": 0.08218211680650711,
+      "input_zero_point": 144,
+      "weight": {
+        "offset": 1569600,
+        "bytes": 147456,
+        "dtype": "int8",
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ]
+      },
+      "weight_scale": 0.00439648050814867,
+      "weight_zero_point": 0,
+      "output_scale": 0.09717492759227753,
+      "output_zero_point": 129,
+      "scale_multiplier": 2044080902,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1717056,
+        "bytes": 1024,
+        "dtype": "int64",
+        "shape": [
+          128
+        ]
+      }
+    },
+    {
+      "index": 56,
+      "name": "backbone.conv57.conv",
+      "input_source": "cat12",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": true,
+      "input_scale": 0.039321985095739365,
+      "input_zero_point": 0,
+      "weight": {
+        "offset": 1718080,
+        "bytes": 65536,
+        "dtype": "int8",
+        "shape": [
+          256,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.011265457607805729,
+      "weight_zero_point": 0,
+      "output_scale": 0.11730366945266724,
+      "output_zero_point": 158,
+      "scale_multiplier": 2076072449,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1783616,
+        "bytes": 2048,
+        "dtype": "int64",
+        "shape": [
+          256
+        ]
+      }
+    },
+    {
+      "index": 57,
+      "name": "conv1",
+      "input_source": "img_conv57",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": false,
+      "input_scale": 0.11730366945266724,
+      "input_zero_point": 158,
+      "weight": {
+        "offset": 1785664,
+        "bytes": 4608,
+        "dtype": "int8",
+        "shape": [
+          18,
+          256,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.005235259886831045,
+      "weight_zero_point": 0,
+      "output_scale": 0.23681679368019104,
+      "output_zero_point": 118,
+      "scale_multiplier": 1425631155,
+      "scale_shift": 39,
+      "bias": {
+        "offset": 1790272,
+        "bytes": 144,
+        "dtype": "int64",
+        "shape": [
+          18
+        ]
+      }
+    },
+    {
+      "index": 58,
+      "name": "conv2",
+      "input_source": "img_conv51",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": false,
+      "input_scale": 0.18542294204235077,
+      "input_zero_point": 121,
+      "weight": {
+        "offset": 1790464,
+        "bytes": 2304,
+        "dtype": "int8",
+        "shape": [
+          18,
+          128,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.006289280019700527,
+      "weight_zero_point": 0,
+      "output_scale": 0.2955966591835022,
+      "output_zero_point": 98,
+      "scale_multiplier": 1084437964,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1792768,
+        "bytes": 144,
+        "dtype": "int64",
+        "shape": [
+          18
+        ]
+      }
+    },
+    {
+      "index": 59,
+      "name": "conv3",
+      "input_source": "img_conv45",
+      "kernel": 1,
+      "stride": 1,
+      "pad": 0,
+      "relu": false,
+      "input_scale": 0.1795879304409027,
+      "input_zero_point": 140,
+      "weight": {
+        "offset": 1792960,
+        "bytes": 1152,
+        "dtype": "int8",
+        "shape": [
+          18,
+          64,
+          1,
+          1
+        ]
+      },
+      "weight_scale": 0.008017742075026035,
+      "weight_zero_point": 0,
+      "output_scale": 0.24596960842609406,
+      "output_zero_point": 102,
+      "scale_multiplier": 1609116960,
+      "scale_shift": 38,
+      "bias": {
+        "offset": 1794112,
+        "bytes": 144,
+        "dtype": "int64",
+        "shape": [
+          18
+        ]
+      }
+    }
+  ],
+  "add3_table": {
+    "offset": 1794304,
+    "bytes": 524288,
+    "encoding": "uint8_pair_index_int64_entries"
+  },
+  "fpga_validated": false
+}
